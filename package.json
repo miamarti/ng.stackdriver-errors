@@ -1,0 +1,31 @@
+{
+  "name": "ng-stackdriver-errors",
+  "version": "0.1.0",
+  "description": "Client-side AngularJS library for Stackdriver Error Reporting",
+  "main": "dist/index.js",
+  "author": "Miller Augusto S. Martins <miller.augusto@gmail.com>",
+  "contributors": [],
+  "dependencies": {
+    "angular": "1.5.x",
+    "stackdriver-errors-js": "0.4.x",
+    "node-minify": "^2.4.0",
+    "replace": "^0.3.0"
+  },
+  "scripts": {
+    "build": "node app/build.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miamarti/ng.stackdriver-errors.git"
+  },
+  "keywords": [
+    "stackdriver",
+    "errors",
+    "Angular"
+  ],
+  "license": "MIT",
+  "homepage": "http://miamarti.github.io/ng.stackdriver-errors/"
+}
