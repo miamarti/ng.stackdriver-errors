@@ -1,4 +1,6 @@
 # See how simple =)
+
+[![Join the chat at https://gitter.im/miamarti/ng.stackdriver-errors](https://badges.gitter.im/miamarti/ng.stackdriver-errors.svg)](https://gitter.im/miamarti/ng.stackdriver-errors?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Client-side AngularJS library for Stackdriver Error Reporting
 
 
