@@ -1,6 +1,6 @@
 {
   "name": "ng-stackdriver-errors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client-side AngularJS library for Stackdriver Error Reporting",
   "main": "dist/index.js",
   "author": "Miller Augusto S. Martins <miller.augusto@gmail.com>",
