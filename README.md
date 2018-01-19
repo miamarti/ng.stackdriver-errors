@@ -42,27 +42,27 @@ angular.module('Requisition', [
 ## Implementation
 Inside config:
 ```
-angular.module('example').config(function($exceptionHandlerProvider) {
+angular.module('example').config(function($exceptionHandlerStdProvider) {
 
-  $exceptionHandlerProvider.config({
+  $exceptionHandlerStdProvider.config({
     key: '<my-api-key>',
     projectId: '<my-project-id>',
     service: '<my-service>',              // (optional)
     version: '<my-service-version>'       // (optional)
   });
 
-  $exceptionHandlerProvider.setUser('XUXA-010203');
+  $exceptionHandlerStdProvider.setUser('XUXA-010203');
 });
 ```
 
 Inside the Controller:
 ```
-angular.module('example').controller('ExampleController', function ($exceptionHandler) {
+angular.module('example').controller('ExampleController', function ($exceptionHandlerStd) {
 
   try {
   ...
   } catch(e) {
-    $exceptionHandler.throw(e);
+    $exceptionHandlerStd.throw(e);
   }
 });
 ```
