@@ -4,7 +4,7 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
 (function(window, angular) {
   'use strict';
 
-  angular.module('ngStackdriverErrors', ['ng']).provider('$exceptionHandler', function() {
+  angular.module('ngStackdriverErrors', ['ng']).provider('$exceptionHandlerStd', function() {
     var $this = {
       stackDrive: new window.StackdriverErrorReporter(),
 
