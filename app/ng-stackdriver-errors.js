@@ -43,7 +43,7 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
       $get: function() {
         return {
           throw: $this.stackDrive.report.bind($this.stackDrive),
-          setUser: $this.stackDrive.setUser.bind($this)
+          setUser: $this.stackDrive.setUser.bind($this.stackDrive)
         };
       }
     };
