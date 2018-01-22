@@ -33,7 +33,7 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
        * @return {[type]}        [description]
        */
       setUser: function(userId) {
-        $this.stackDrive.setUser(userId);
+        $this.stackDrive.setUser(userId + ' [' + screen.availWidth + 'x' + screen.availHeight + ']');
       },
 
       /**
@@ -43,7 +43,7 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
       $get: function() {
         return {
           throw: $this.stackDrive.report.bind($this.stackDrive),
-          setUser: $this.stackDrive.setUser.bind($this.stackDrive)
+          setUser: $this.setUser.bind($this)
         };
       }
     };
