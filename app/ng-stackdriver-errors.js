@@ -14,8 +14,9 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
        * @param  {[type]} cause     [description]
        * @return {[type]}           [description]
        */
-      report: function(exception, cause) {
-        $this.stackDrive.report(exception, cause);
+      report: function(e, cause) {
+        $this.consoleLog && console.error(e);
+        $this.stackDrive.report(e, cause);
       },
 
       /**
@@ -24,6 +25,7 @@ window.StackdriverErrorReporter = require('stackdriver-errors-js').StackdriverEr
        * @return {[type]}      [description]
        */
       config: function(data) {
+        $this.consoleLog = data.consoleLog;
         $this.stackDrive.start(data);
       },
 
